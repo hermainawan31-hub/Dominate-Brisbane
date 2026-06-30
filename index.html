@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Dominate Brisbane - Premium Gym & Fitness Center. Join us for expert training, modern equipment, and a supportive community.">
+  <meta name="keywords" content="Gym, fitness, training, Brisbane, Dominate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dominate Brisbane | Home</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+  <!-- Css Styles -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+  <link rel="stylesheet" href="css/barfiller.css" type="text/css">
+  <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+  <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <style>
+    /* --- refined logo styling --- */
+    .logo {
+      display: flex;
+      align-items: center;
+      padding: 6px 0;
+    }
+    .logo a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+    .logo img {
+      height: 48px;
+      width: auto;
+      filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));
+      transition: filter 0.3s ease;
+    }
+    .logo img:hover {
+      filter: drop-shadow(0 4px 12px rgba(243, 97, 0, 0.6));
+    }
+    .logo-text {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: 2px;
+      color: #ffffff;
+      margin-left: 10px;
+      text-transform: uppercase;
+      background: linear-gradient(135deg, #f36100, #ff8c42);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+    .header-section .container-fluid .row {
+      align-items: center;
+    }
+    @media (max-width: 767px) {
+      .logo img {
+        height: 40px;
+      }
+      .logo-text {
+        font-size: 18px;
+        margin-left: 6px;
+      }
+    }
+
+    /* Login button in nav */
+    .nav-login-btn {
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family: "Oswald", sans-serif;
+      padding: 10px 20px;
+      background: #f36100;
+      border-radius: 4px;
+      transition: all 0.3s;
+      display: inline-block;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+    }
+    .nav-login-btn:hover {
+      background: #d35400;
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    /* User avatar in nav when logged in */
+    .user-avatar {
+      display: none;
+      align-items: center;
+      gap: 10px;
+      color: #ffffff;
+      cursor: default;
+    }
+    .user-avatar .avatar-img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background: #f36100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 16px;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+    .user-avatar .user-name {
+      font-size: 14px;
+      font-weight: 500;
+      font-family: "Oswald", sans-serif;
+      letter-spacing: 0.5px;
+    }
+    .user-avatar .logout-link {
+      color: #c4c4c4;
+      font-size: 14px;
+      text-decoration: none;
+      margin-left: 5px;
+      transition: color 0.3s;
+      cursor: pointer;
+    }
+    .user-avatar .logout-link:hover {
+      color: #f36100;
+    }
+
+    /* Login Modal Styles */
+    .login-modal .modal-content {
+      background: #0a0a0a;
+      border: 1px solid #363636;
+      border-radius: 8px;
+      color: #ffffff;
+    }
+    .login-modal .modal-header {
+      border-bottom: 1px solid #363636;
+      padding: 20px 30px;
+    }
+    .login-modal .modal-header .close {
+      color: #ffffff;
+      opacity: 0.7;
+      text-shadow: none;
+    }
+    .login-modal .modal-header .close:hover {
+      opacity: 1;
+    }
+    .login-modal .modal-body {
+      padding: 30px;
+    }
+    .login-modal .section-title {
+      margin-bottom: 20px;
+    }
+    .login-modal .section-title span {
+      font-size: 14px;
+      color: #f36100;
+    }
+    .login-modal .section-title h2 {
+      font-size: 24px;
+      color: #ffffff;
+    }
+    .login-modal .form-group {
+      margin-bottom: 18px;
+    }
+    .login-modal label {
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 13px;
+      display: block;
+      margin-bottom: 6px;
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .login-modal input {
+      width: 100%;
+      height: 45px;
+      background: transparent;
+      border: 1px solid #363636;
+      color: #c4c4c4;
+      padding: 0 15px;
+      font-size: 14px;
+      transition: border-color 0.3s;
+      border-radius: 4px;
+    }
+    .login-modal input:focus {
+      border-color: #f36100;
+      outline: none;
+    }
+    .login-modal input::placeholder {
+      color: #666;
+    }
+    .login-modal .login-btn {
+      width: 100%;
+      height: 45px;
+      background: #f36100;
+      color: #ffffff;
+      border: none;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 15px;
+      letter-spacing: 2px;
+      transition: background 0.3s;
+      border-radius: 4px;
+      font-family: 'Oswald', sans-serif;
+    }
+    .login-modal .login-btn:hover {
+      background: #d35400;
+    }
+    .login-modal .form-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 12px 0 18px;
+    }
+    .login-modal .form-footer a {
+      color: #c4c4c4;
+      font-size: 12px;
+      transition: color 0.3s;
+      text-decoration: none;
+    }
+    .login-modal .form-footer a:hover {
+      color: #f36100;
+    }
+    .login-modal .form-footer .checkbox-label {
+      color: #c4c4c4;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      font-family: 'Muli', sans-serif;
+      font-weight: 400;
+      text-transform: none;
+    }
+    .login-modal .form-footer .checkbox-label input[type="checkbox"] {
+      width: auto;
+      height: auto;
+      accent-color: #f36100;
+      cursor: pointer;
+    }
+    .login-modal .login-divider {
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+      color: #666;
+      font-size: 12px;
+    }
+    .login-modal .login-divider::before,
+    .login-modal .login-divider::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: #363636;
+    }
+    .login-modal .login-divider::before {
+      margin-right: 15px;
+    }
+    .login-modal .login-divider::after {
+      margin-left: 15px;
+    }
+    .login-modal .social-login {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+    }
+    .login-modal .social-login a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #1a1a1a;
+      color: #c4c4c4;
+      font-size: 16px;
+      transition: all 0.3s;
+      border: 1px solid #363636;
+      text-decoration: none;
+    }
+    .login-modal .social-login a:hover {
+      background: #f36100;
+      color: #ffffff;
+      border-color: #f36100;
+      transform: translateY(-2px);
+    }
+    .login-modal .register-link {
+      text-align: center;
+      margin-top: 15px;
+      color: #c4c4c4;
+      font-size: 13px;
+    }
+    .login-modal .register-link a {
+      color: #f36100;
+      font-weight: 700;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .login-modal .register-link a:hover {
+      color: #ff8c42;
+      text-decoration: underline;
+    }
+    .login-modal .login-error {
+      background: rgba(243, 97, 0, 0.15);
+      border: 1px solid #f36100;
+      color: #f36100;
+      padding: 8px 12px;
+      border-radius: 4px;
+      font-size: 12px;
+      display: none;
+      margin-bottom: 12px;
+    }
+    .login-modal .login-error.show {
+      display: block;
+    }
+    .login-modal .password-toggle {
+      position: relative;
+    }
+    .login-modal .password-toggle .toggle-eye {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #666;
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+    .login-modal .password-toggle .toggle-eye:hover {
+      color: #f36100;
+    }
+
+    @media (max-width: 991px) {
+      .nav-login-btn {
+        padding: 8px 15px;
+        font-size: 12px;
+      }
+      .user-avatar .user-name {
+        font-size: 12px;
+      }
+    }
+    #navLoginSection {
+      display: flex;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Page Preloder -->
+  <div id="preloder"><div class="loader"></div></div>
+
+  <!-- Offcanvas Menu Section Begin -->
+  <div class="offcanvas-menu-overlay"></div>
+  <div class="offcanvas-menu-wrapper">
+    <div class="canvas-close"><i class="fa fa-close"></i></div>
+    <div class="canvas-search search-switch"><i class="fa fa-search"></i></div>
+    <nav class="canvas-menu mobile-menu">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about-us.html">About Us</a></li>
+        <li><a href="./classes.html">Classes</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./team.html">Our Team</a></li>
+        <li><a href="#">Pages</a>
+          <ul class="dropdown">
+            <li><a href="./about-us.html">About us</a></li>
+            <li><a href="./class-timetable.html">Classes timetable</a></li>
+            <li><a href="./bmi-calculator.html">Bmi calculate</a></li>
+          </ul>
+        </li>
+        <li><a href="./contact.html">Contact</a></li>
+        
+      </ul>
+    </nav>
+    <div id="mobile-menu-wrap"></div>
+   
+  </div>
+  <!-- Offcanvas Menu Section End -->
+
+  <!-- Header Section Begin -->
+  <header class="header-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="logo">
+            <a href="./index.html">
+              <img src="last.png" alt="Dominate Brisbane">
+              <span class="logo-text">Dominate</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="nav-menu">
+            <ul>
+              <li class="active"><a href="./index.html">Home</a></li>
+              <li><a href="./about-us.html">About Us</a></li>
+              <li><a href="./class-details.html">Classes</a></li>
+              <li><a href="./services.html">Services</a></li>
+              <li><a href="./team.html">Our Team</a></li>
+              <li><a href="#">Pages</a>
+                <ul class="dropdown">
+                  <li><a href="./about-us.html">About us</a></li>
+                  <li><a href="./class-timetable.html">Classes timetable</a></li>
+                  <li><a href="./bmi-calculator.html">Bmi calculate</a></li>
+                </ul>
+              </li>
+              <li><a href="./contact.html">Contact</a></li>
+              <li>
+                <div id="navLoginSection">
+
+                  
+                    
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-3">
+       
+          </div>
+        </div>
+      </div>
+      <div class="canvas-open"><i class="fa fa-bars"></i></div>
+    </div>
+  </header>
+  <!-- Header End -->
+
+  <!-- Hero Section Begin -->
+  <section class="hero-section">
+    <div class="hs-slider owl-carousel">
+      <div class="hs-item set-bg" data-setbg="img/hero/hero-1.jpg">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 offset-lg-6">
+              <div class="hi-text">
+                <span>Shape your body</span>
+                <h1>Be <strong>strong</strong> training hard</h1>
+                <a href="#" class="primary-btn">Get info</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hs-item set-bg" data-setbg="img/hero/hero-2.jpg">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 offset-lg-6">
+              <div class="hi-text">
+                <span>Shape your body</span>
+                <h1>Be <strong>strong</strong> training hard</h1>
+                <a href="#" class="primary-btn">Get info</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero Section End -->
+
+  <!-- ChoseUs Section Begin -->
+  <section class="choseus-section spad">
+    <div class="container">
+      <div class="row"><div class="col-lg-12"><div class="section-title"><span>Why chose us?</span><h2>PUSH YOUR LIMITS FORWARD</h2></div></div></div>
+      <div class="row">
+        <div class="col-lg-3 col-sm-6"><div class="cs-item"><span class="flaticon-034-stationary-bike"></span><h4>Smart Membership Management</h4><p>Manage your memberships with ease. Track member registrations, renewals, attendance, and payment history through one powerful management system.</p></div></div>
+        <div class="col-lg-3 col-sm-6"><div class="cs-item"><span class="flaticon-033-juice"></span><h4>Healthy nutrition plan</h4><p>Get customized nutrition plans tailored to your fitness goals. Maintain a balanced diet with expert guidance to maximize your performance and results.</p></div></div>
+        <div class="col-lg-3 col-sm-6"><div class="cs-item"><span class="flaticon-002-dumbell"></span><h4>Professional training plan</h4><p>Training programs designed for every goal. Create customized workout schedules based on fitness levels, whether members want lose weight, build muscle, or improve endurance.</p></div></div>
+        <div class="col-lg-3 col-sm-6"><div class="cs-item"><span class="flaticon-014-heart-beat"></span><h4>Progress Tracking & Member Support</h4><p>Monitor your fitness journey with real-time progress tracking, performance reports, attendance records, and continuous support from experienced trainers.</p></div></div>
+      </div>
+    </div>
+  </section>
+  <!-- ChoseUs Section End -->
+
+  <!-- Classes Section Begin -->
+  <section class="classes-section spad">
+    <div class="container">
+      <div class="row"><div class="col-lg-12"><div class="section-title"><span>Our Classes</span><h2>WHAT WE CAN OFFER</h2></div></div></div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6"><div class="class-item"><div class="ci-pic"><img src="img/classes/class-1.jpg" alt=""></div><div class="ci-text"><span>STRENGTH</span><h5>Weightlifting</h5><a href="#"><i class="fa fa-angle-right"></i></a></div></div></div>
+        <div class="col-lg-4 col-md-6"><div class="class-item"><div class="ci-pic"><img src="img/classes/class-2.jpg" alt=""></div><div class="ci-text"><span>Cardio</span><h5>Indoor cycling</h5><a href="#"><i class="fa fa-angle-right"></i></a></div></div></div>
+        <div class="col-lg-4 col-md-6"><div class="class-item"><div class="ci-pic"><img src="img/classes/class-3.jpg" alt=""></div><div class="ci-text"><span>STRENGTH</span><h5>Kettlebell power</h5><a href="#"><i class="fa fa-angle-right"></i></a></div></div></div>
+        <div class="col-lg-6 col-md-6"><div class="class-item"><div class="ci-pic"><img src="img/classes/class-4.jpg" alt=""></div><div class="ci-text"><span>Cardio</span><h4>Indoor cycling</h4><a href="#"><i class="fa fa-angle-right"></i></a></div></div></div>
+        <div class="col-lg-6"><div class="class-item"><div class="ci-pic"><img src="img/classes/class-5.jpg" alt=""></div><div class="ci-text"><span>Training</span><h4>Boxing</h4><a href="#"><i class="fa fa-angle-right"></i></a></div></div></div>
+      </div>
+    </div>
+  </section>
+  <!-- ChoseUs Section End -->
+
+  <!-- Banner Section Begin -->
+  <section class="banner-section set-bg" data-setbg="img/banner-bg.jpg">
+    <div class="container"><div class="row"><div class="col-lg-12 text-center"><div class="bs-text"><h2>registration now to get more deals</h2><div class="bt-tips">Where health, beauty and fitness meet.</div><a href="#" class="primary-btn btn-normal">Appointment</a></div></div></div></div>
+  </section>
+  <!-- Banner Section End -->
+
+  <!-- Pricing Section Begin -->
+  <section class="pricing-section spad">
+    <div class="container">
+      <div class="row"><div class="col-lg-12"><div class="section-title"><span>Our Plan</span><h2>Choose your pricing plan</h2></div></div></div>
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-8"><div class="ps-item"><h3>Class drop-in</h3><div class="pi-price"><h2>$ 39.0</h2><span>SINGLE CLASS</span></div><ul><li>Free riding</li><li>Unlimited equipments</li><li>Personal trainer</li><li>Weight losing classes</li><li>Month to month</li><li>No time restriction</li></ul><a href="#" class="primary-btn pricing-btn">Enroll now</a><a href="#" class="thumb-icon"><i class="fa fa-picture-o"></i></a></div></div>
+        <div class="col-lg-4 col-md-8"><div class="ps-item"><h3>12 Month unlimited</h3><div class="pi-price"><h2>$ 99.0</h2><span>SINGLE CLASS</span></div><ul><li>Free riding</li><li>Unlimited equipments</li><li>Personal trainer</li><li>Weight losing classes</li><li>Month to month</li><li>No time restriction</li></ul><a href="#" class="primary-btn pricing-btn">Enroll now</a><a href="#" class="thumb-icon"><i class="fa fa-picture-o"></i></a></div></div>
+        <div class="col-lg-4 col-md-8"><div class="ps-item"><h3>6 Month unlimited</h3><div class="pi-price"><h2>$ 59.0</h2><span>SINGLE CLASS</span></div><ul><li>Free riding</li><li>Unlimited equipments</li><li>Personal trainer</li><li>Weight losing classes</li><li>Month to month</li><li>No time restriction</li></ul><a href="#" class="primary-btn pricing-btn">Enroll now</a><a href="#" class="thumb-icon"><i class="fa fa-picture-o"></i></a></div></div>
+      </div>
+    </div>
+  </section>
+  <!-- Pricing Section End -->
+
+  <!-- Gallery Section Begin -->
+  <div class="gallery-section">
+    <div class="gallery">
+      <div class="grid-sizer"></div>
+      <div class="gs-item grid-wide set-bg" data-setbg="img/gallery/gallery-1.jpg"><a href="img/gallery/gallery-1.jpg" class="thumb-icon image-popup"><i class="fa fa-picture-o"></i></a></div>
+      <div class="gs-item set-bg" data-setbg="img/gallery/gallery-2.jpg"><a href="img/gallery/gallery-2.jpg" class="thumb-icon image-popup"><i class="fa fa-picture-o"></i></a></div>
+      <div class="gs-item set-bg" data-setbg="img/gallery/gallery-3.jpg"><a href="img/gallery/gallery-3.jpg" class="thumb-icon image-popup"><i class="fa fa-picture-o"></i></a></div>
+      <div class="gs-item set-bg" data-setbg="img/gallery/gallery-4.jpg"><a href="img/gallery/gallery-4.jpg" class="thumb-icon image-popup"><i class="fa fa-picture-o"></i></a></div>
+      <div class="gs-item set-bg" data-setbg="img/gallery/gallery-5.jpg"><a href="img/gallery/gallery-5.jpg" class="thumb-icon image-popup"><i class="fa fa-picture-o"></i></a></div>
+      <div class="gs-item grid-wide set-bg" data-setbg="img/gallery/gallery-6.jpg"><a href="img/gallery/gallery-6.jpg" class="thumb-icon image-popup"><i class="fa fa-picture-o"></i></a></div>
+    </div>
+  </div>
+  <!-- Gallery Section End -->
+
+  <!-- Team Section Begin -->
+  <section class="team-section spad">
+    <div class="container">
+      <div class="row"><div class="col-lg-12"><div class="team-title"><div class="section-title"><span>Our Team</span><h2>TRAIN WITH EXPERTS</h2></div><a href="#" class="primary-btn btn-normal appoinment-btn">appointment</a></div></div></div>
+      <div class="row"><div class="ts-slider owl-carousel">
+        <div class="col-lg-4"><div class="ts-item set-bg" data-setbg="img/team/team-1.jpg"><div class="ts_text"><h4>James Mitchell</h4><span>Head Trainer</span></div></div></div>
+        <div class="col-lg-4"><div class="ts-item set-bg" data-setbg="img/team/team-2.jpg"><div class="ts_text"><h4>Sarah Williams</h4><span>Fitness Coach</span></div></div></div>
+        <div class="col-lg-4"><div class="ts-item set-bg" data-setbg="img/team/team-3.jpg"><div class="ts_text"><h4>David Chen</h4><span>Strength Specialist</span></div></div></div>
+        <div class="col-lg-4"><div class="ts-item set-bg" data-setbg="img/team/team-4.jpg"><div class="ts_text"><h4>Emily Johnson</h4><span>Yoga Instructor</span></div></div></div>
+        <div class="col-lg-4"><div class="ts-item set-bg" data-setbg="img/team/team-5.jpg"><div class="ts_text"><h4>Michael Rodriguez</h4><span>Boxing Coach</span></div></div></div>
+        <div class="col-lg-4"><div class="ts-item set-bg" data-setbg="img/team/team-6.jpg"><div class="ts_text"><h4>Jessica Taylor</h4><span>Nutritionist</span></div></div></div>
+      </div></div>
+    </div>
+  </section>
+  <!-- Team Section End -->
+
+  <!-- Get In Touch Section Begin -->
+  <div class="gettouch-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4"><div class="gt-text"><i class="fa fa-map-marker"></i><p>123 Adelaide Street, Brisbane QLD 4000, Australia</p></div></div>
+        <div class="col-md-4"><div class="gt-text"><i class="fa fa-mobile"></i><ul><li>+61 7 3123 4567</li><li>+61 412 345 678</li></ul></div></div>
+        <div class="col-md-4"><div class="gt-text email"><i class="fa fa-envelope"></i><p>Support.dominatebrisbane@gmail.com</p></div></div>
+      </div>
+    </div>
+  </div>
+  <!-- Get In Touch Section End -->
+
+  <!-- Footer Section Begin -->
+  <section class="footer-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="fs-about">
+            <div class="fa-logo"><a href="#"><img src="last.png" alt=""></a></div>
+            <p>Dominate Brisbane Management is an all-in-one gym management system designed to simplify membership management, attendance tracking, trainer scheduling, workout planning, and payment processing. Our platform helps gyms operate efficiently while providing members with a seamless fitness experience.</p>
+            <div class="fa-social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-youtube-play"></i></a><a href="#"><i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-envelope-o"></i></a></div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6"><div class="fs-widget"><h4>Useful links</h4><ul><li><a href="#">About</a></li><li><a href="#">Blog</a></li><li><a href="#">Classes</a></li><li><a href="#">Contact</a></li></ul></div></div>
+        <div class="col-lg-2 col-md-3 col-sm-6"><div class="fs-widget"><h4>Support</h4><ul><li><a href="#" data-toggle="modal" data-target="#loginModal">Login</a></li><li><a href="#">My account</a></li><li><a href="#">Subscribe</a></li><li><a href="#">Contact</a></li></ul></div></div>
+        <div class="col-lg-4 col-md-6"><div class="fs-widget"><h4>Tips & Guides</h4><div class="fw-recent"><h6><a href="#">Physical fitness may help prevent depression, anxiety</a></h6><ul><li>3 min read</li><li>20 Comment</li></ul></div><div class="fw-recent"><h6><a href="#">Fitness: The best exercise to lose belly fat and tone up...</a></h6><ul><li>3 min read</li><li>20 Comment</li></ul></div></div></div>
+      </div>
+      <div class="row"><div class="col-lg-12 text-center"><div class="copyright-text"><p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p></div></div></div>
+    </div>
+  </section>
+  <!-- Footer Section End -->
+
+  <!-- Search model Begin -->
+  <div class="search-model">
+    <div class="h-100 d-flex align-items-center justify-content-center">
+      <div class="search-close-switch">+</div>
+      <form class="search-model-form"><input type="text" id="search-input" placeholder="Search here....."></form>
+    </div>
+  </div>
+  <!-- Search model end -->
+
+  <!-- Login Modal -->
+  <div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" style="color:#ffffff;font-family:'Oswald',sans-serif;font-weight:600;">Welcome Back</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="section-title">
+            <span>Sign in to your account</span>
+            <h2>LOGIN</h2>
+          </div>
+
+          <div class="login-error" id="loginError">
+            <i class="fa fa-exclamation-circle"></i> Invalid email or password. Please try again.
+          </div>
+
+          <form id="loginForm" onsubmit="return handleLogin(event)">
+            <div class="form-group">
+              <label for="loginEmail">Email Address</label>
+              <input type="email" id="loginEmail" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <label for="loginPassword">Password</label>
+              <div class="password-toggle">
+                <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                <button type="button" class="toggle-eye" onclick="togglePassword()">
+                  <i class="fa fa-eye" id="eyeIcon"></i>
+                </button>
+              </div>
+            </div>
+            <div class="form-footer">
+              <label class="checkbox-label">
+                <input type="checkbox" id="rememberMe"> Remember Me
+              </label>
+              <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="login-btn">Sign In</button>
+          </form>
+
+          <div class="login-divider">OR</div>
+
+          <div class="social-login">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+          </div>
+
+          <div class="register-link">
+            Don't have an account? <a href="#" onclick="alert('Registration page coming soon!')">Register Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Js Plugins -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/jquery.barfiller.js"></script>
+  <script src="js/jquery.slicknav.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    // Toggle password visibility
+    function togglePassword() {
+      const passwordInput = document.getElementById('loginPassword');
+      const eyeIcon = document.getElementById('eyeIcon');
+      if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        eyeIcon.className = 'fa fa-eye-slash';
+      } else {
+        passwordInput.type = 'password';
+        eyeIcon.className = 'fa fa-eye';
+      }
+    }
+
+    // Handle login form submission
+    function handleLogin(event) {
+      event.preventDefault();
+      const email = document.getElementById('loginEmail').value;
+      const password = document.getElementById('loginPassword').value;
+      const errorDiv = document.getElementById('loginError');
+
+      if (!email || !password) {
+        errorDiv.textContent = 'Please fill in all fields.';
+        errorDiv.className = 'login-error show';
+        return false;
+      }
+
+      // Demo login - accept specific credentials
+      if (email === 'demo@dominatebrisbane.com' && password === 'password123') {
+        errorDiv.className = 'login-error';
+        // Close modal
+        $('#loginModal').modal('hide');
+        // Show user avatar
+        showUserAvatar('John Doe');
+        return true;
+      }
+
+      errorDiv.innerHTML = '<i class="fa fa-exclamation-circle"></i> Invalid email or password. (Hint: use demo@dominatebrisbane.com / password123)';
+      errorDiv.className = 'login-error show';
+      return false;
+    }
+
+    // Show user avatar and hide login button
+    function showUserAvatar(name) {
+      document.getElementById('loginNavBtn').style.display = 'none';
+      const avatar = document.getElementById('userAvatar');
+      avatar.style.display = 'flex';
+      // Set initials
+      const initials = name.split(' ').map(word => word[0]).join('');
+      document.getElementById('avatarInitials').textContent = initials.toUpperCase();
+      document.getElementById('userDisplayName').textContent = name;
+      // Save login state
+      localStorage.setItem('isLoggedIn', 'true');
+      localStorage.setItem('userName', name);
+    }
+
+    // Hide user avatar and show login button
+    function hideUserAvatar() {
+      document.getElementById('loginNavBtn').style.display = 'inline-block';
+      document.getElementById('userAvatar').style.display = 'none';
+      localStorage.removeItem('isLoggedIn');
+      localStorage.removeItem('userName');
+    }
+
+    // Logout handler
+    document.getElementById('logoutLink').addEventListener('click', function(e) {
+      e.preventDefault();
+      hideUserAvatar();
+      alert('You have been logged out.');
+    });
+
+    // Check login state on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      const isLoggedIn = localStorage.getItem('isLoggedIn');
+      if (isLoggedIn === 'true') {
+        const userName = localStorage.getItem('userName') || 'John Doe';
+        showUserAvatar(userName);
+      }
+    });
+
+    // Close modal on success and show avatar
+    $('#loginModal').on('hidden.bs.modal', function() {
+      // Check if we should show avatar (handled in handleLogin)
+    });
+  </script>
+</body>
+</html>
